@@ -14,8 +14,8 @@ Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
 Employee.prototype.jobGreet=()=>console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 // Do not change code below this line
-let person=new Person(name,age);
-let emp=new Employee(name,age,jobTitle);
+let person=new Person("Alice",25);
+let emp=new Employee("Bob",30,"Manager");
 person.greet();
 emp.jobGreet();
 window.Person = Person;
